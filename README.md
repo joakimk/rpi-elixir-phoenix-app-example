@@ -6,7 +6,7 @@ An example of how to run a phoenix app using [dockerized Elixir](https://github.
 
 Just put [an OS with docker](http://blog.hypriot.com/downloads/) on it's memory card, run `docker run -p 4000:4000 joakimk/rpi-elixir-phoenix-app-example` and visit <http://your-raspberry-pi-ip:4000> and you should see something like:
 
-TODO!
+![](https://dl.dropboxusercontent.com/u/136929/github/rpi-elixir-phoenix.png)
 
 ## About
 
