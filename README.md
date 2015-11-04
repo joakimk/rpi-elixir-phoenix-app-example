@@ -4,7 +4,7 @@ An example of how to run a phoenix app using [dockerized Elixir](https://github.
 
 ## How to run
 
-Just put [an OS with docker](http://blog.hypriot.com/downloads/) on it's memory card, run `docker run joakimk/rpi-elixir-phoenix-app-example` and visit <http://your-raspberry-pi-ip:4000> and you should see something like:
+Just put [an OS with docker](http://blog.hypriot.com/downloads/) on it's memory card, run `docker run -p 4000:4000 joakimk/rpi-elixir-phoenix-app-example` and visit <http://your-raspberry-pi-ip:4000> and you should see something like:
 
 TODO!
 
@@ -15,7 +15,7 @@ TODO!
 
 ## Building
 
-This takes ? minutes on a Raspberry Pi 2.
+This takes 30 minutes on a Raspberry Pi 2.
 
     make
 

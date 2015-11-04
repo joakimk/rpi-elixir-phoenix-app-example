@@ -8,7 +8,9 @@ ENV ELIXIR_VERSION=1.1.1 \
 ENV DEBIAN_FRONTEND=noninteractive \
     LANG=en_US.UTF-8 \
     LANGUAGE=en_US.UTF-8 \
-    LC_ALL=en_US.UTF-8
+    LC_ALL=en_US.UTF-8 \
+    MIX_ENV=prod \
+    PORT=4000
 
 RUN apt-get update && apt-get install -y git \
   && apt-get clean \
@@ -22,8 +24,12 @@ RUN git clone https://github.com/chrismccord/phoenix_chat_example.git /app \
   && mix deps.get \
   && mix compile
 
+COPY ./prod.exs /app/config/prod.exs
+COPY ./docker-entrypoint.sh /
+
 EXPOSE 4000
 
 WORKDIR /app
 
-CMD ["mix phoenix.server"]
+ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD ["server"]
