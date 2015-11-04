@@ -15,7 +15,7 @@ Just put [an OS with docker](http://blog.hypriot.com/downloads/) on it's memory 
 
 Please do benchmarks! :). Would be fun to see how much a Pi running phoenix can handle. It can certainly respond quickly (~1ms).
 
-A quick bench (over wifi) with 500 concurrenct clients showed ~450 reqs/sec (GET /) at 250% cpu (out of 400%). That's 27 000 RPM. It can probably do much more. Though the test to run would be how many channels.
+A quick bench (over wifi) with 500 concurrenct clients showed ~450 reqs/sec (GET /) at 250% cpu (out of 400%). That's 27 000 RPM. It can probably do much more. Though the test that would be interesting would be how many channel clients.
 
 ## Building
 
