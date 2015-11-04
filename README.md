@@ -15,7 +15,7 @@ TODO!
 
 ## Benchmark
 
-Please do benchmarks! :). Would be fun to see how much a Pi running phoenix can handle. It can certainly respond in quickly (~1ms).
+Please do benchmarks! :). Would be fun to see how much a Pi running phoenix can handle. It can certainly respond quickly (~1ms).
 
 ## Building
 
