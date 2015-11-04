@@ -1,6 +1,8 @@
 WIP!
 
-A phoenix chat app for [dockerized Elixir](https://github.com/joakimk/rpi-elixir) on Raspberry Pi.
+An example of how to run a phoenix app using [dockerized Elixir](https://github.com/joakimk/rpi-elixir) on a Raspberry Pi.
+
+## How to run
 
 Just put [an OS with docker](http://blog.hypriot.com/downloads/) on it's memory card, run `docker run joakimk/rpi-elixir-phoenix-app-example` and visit http://your-raspberry-pi-ip:4000 and you should see something like:
 

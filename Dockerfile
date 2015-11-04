@@ -12,8 +12,10 @@ ENV DEBIAN_FRONTEND=noninteractive \
 
 RUN apt-get update && apt-get install -y git \
   && apt-get clean \
-  && rm -rf /var/lib/apt/lists/* \
-  && git clone https://github.com/chrismccord/phoenix_chat_example.git /app \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN git clone https://github.com/chrismccord/phoenix_chat_example.git /app \
+  && cd /app \
   && git checkout ${APP_GIT_COMMIT} \
   && yes Y | mix local.hex \
   && yes Y | mix local.rebar \
@@ -22,4 +24,6 @@ RUN apt-get update && apt-get install -y git \
 
 EXPOSE 4000
 
-CMD ["cd /app && mix phoenix.server"]
+WORKDIR /app
+
+CMD ["mix phoenix.server"]
