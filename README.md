@@ -13,6 +13,10 @@ TODO!
 * Built on [rpi-elixir](https://github.com/joakimk/rpi-elixir).
 * Dockerizes [chrismccord/phoenix_chat_example](https://github.com/chrismccord/phoenix_chat_example)
 
+## Benchmark
+
+Please do benchmarks! :). Would be fun to see how much a Pi running phoenix can handle. It can certainly respond in quickly (~1ms).
+
 ## Building
 
 This takes 15 minutes on a Raspberry Pi 2.
