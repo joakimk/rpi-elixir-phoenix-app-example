@@ -15,9 +15,13 @@ TODO!
 
 ## Building
 
-This takes 30 minutes on a Raspberry Pi 2.
+This takes 15 minutes on a Raspberry Pi 2.
 
     make
+
+There is probably quicker ways to run a phoenix app in docker, like mounting volumes, but for releasing it as a complete image that is about the time it takes unless you cache some dependencies (git, hex, rebar, maybe compiled dependencies) in a base image.
+
+It's probably possible to compile the elixir code on another box and deploy it to the Pi as well.
 
 ## Publishing
 
