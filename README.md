@@ -1,5 +1,3 @@
-WIP!
-
 An example of how to run a phoenix app using [dockerized Elixir](https://github.com/joakimk/rpi-elixir) on a Raspberry Pi.
 
 ## How to run
