@@ -13,7 +13,7 @@ Just put [an OS with docker](http://blog.hypriot.com/downloads/) on it's memory 
 
 ## Benchmark
 
-A quick bench with 100 concurrent clients showed ~535 reqs/sec (32 000 RPM) for "GET" request to "/".
+A quick bench with 100 concurrent clients showed 541 reqs/sec (32 000 RPM) for "GET" request to "/".
 
 ```
 Concurrency Level:      100
