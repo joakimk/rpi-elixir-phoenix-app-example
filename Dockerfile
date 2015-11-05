@@ -1,16 +1,14 @@
 FROM joakimk/rpi-elixir:1.1.1
-MAINTAINER Joakim Kolsjö <joakim.kolsjo<at>gmail.com>
+MAINTAINER Joakim KolsjÃ¶ <joakim.kolsjo<at>gmail.com>
 
 # Latest at time of build
-ENV ELIXIR_VERSION=1.1.1 \
-    APP_GIT_COMMIT=fe40ef85abd5e52c157b38fbc2eb8082c7fdc455
+ENV APP_GIT_COMMIT=fe40ef85abd5e52c157b38fbc2eb8082c7fdc455
 
 ENV DEBIAN_FRONTEND=noninteractive \
     LANG=en_US.UTF-8 \
     LANGUAGE=en_US.UTF-8 \
     LC_ALL=en_US.UTF-8 \
-    MIX_ENV=prod \
-    PORT=4000
+    MIX_ENV=prod
 
 RUN apt-get update && apt-get install -y git \
   && apt-get clean \
