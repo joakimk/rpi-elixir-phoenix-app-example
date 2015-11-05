@@ -13,8 +13,6 @@ Just put [an OS with docker](http://blog.hypriot.com/downloads/) on it's memory 
 
 ## Benchmark
 
-Please do benchmarks! :). Would be fun to see how much a Pi running phoenix can handle. It can certainly respond quickly (~1ms).
-
 A quick bench with 100 concurrent clients showed ~535 reqs/sec (32 000 RPM) for "GET" request to "/".
 
 ```
@@ -32,6 +30,8 @@ Transfer rate:          1168.03 [Kbytes/sec] received
 ```
 
 Would be interesting to know how many channel clients it could handle at a resonable level of service (1 second or less to broadcast to everyone).
+
+If you like benchmarking, ping me with the benchmark and the numbers and I'll add them here.
 
 ## Building
 
